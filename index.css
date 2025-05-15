@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #2D2D2D;
+    --bg-light: #F3F3F3;
+    --max-width: 1280px;
+    --section-padding: 42px 24px;
+    --font-family: "Epilogue", sans-serif;
+    --bg-color: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +14,11 @@
 }
 
 body {
-    font-family: "Epilogue", sans-serif;
+    font-family: var(--font-family);
     width: 100%;
 }
 
 .textContent {
-    font-family: Epilogue;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -28,27 +36,22 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
     padding: 24px 42px;
-    background-color: #fff;
+    background-color: var(--bg-color);
     width: 90%;
-    max-width: 1280px;
+    max-width: var(--max-width);
     margin: 0 auto;
 }
 
-.navigation .logo {}
-
 .nav ul {
-    list-style: none;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
     gap: 24px;
+    list-style: none;
 }
 
 .nav ul li a {
     text-decoration: none;
-    color: #2D2D2D;
+    color: var(--primary-color);
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -61,22 +64,23 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    background-color: #fff;
+    background-color: var(--bg-color);
     gap: 42px 68px;
     width: 90%;
-    max-width: 1280px;
+    max-width: var(--max-width);
     margin: 0 auto;
+    padding: var(--section-padding);
 }
 
 .header-section .header-content {
     display: flex;
+    flex: 1 0 0;
     min-width: 320px;
     max-width: 620px;
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;
-    flex: 1 0 0;
+
 }
 
 .header-section .header-content .title {
@@ -87,14 +91,12 @@ body {
     margin-right: 140px;
 }
 
-.title .title-content {}
 
 .title .visual {
     font-size: 68px;
     font-weight: 600;
-    color: #2D2D2D;
+    color: var(--primary-color);
     font-style: normal;
-
 }
 
 .title .subtitle {
@@ -102,9 +104,9 @@ body {
 }
 
 .title .btn-contact {
-    background-color: #2D2D2D;
+    background-color: var(--primary-color);
     padding: 24px 64px;
-    color: #fff;
+    color: var(--bg-color);
     font-weight: 500;
     font-size: 15px;
     cursor: pointer;
@@ -113,30 +115,25 @@ body {
     height: 78px;
 }
 
-.header-section .header-image {
+.header-section .header-image,
+.header-image img {
     height: 360px;
     max-width: 480px;
     min-width: 320px;
     flex: 1 0 0;
 }
 
-.header-section .header-image img {
-    height: 360px;
-    max-width: 480px;
-    min-width: 320px;
-}
-
 /*logo bar*/
 .logo-bar {
     width: 90%;
-    max-width: 1280px;
+    max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
     row-gap: 68px;
     justify-content: space-between;
     padding: 42px 68px;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--bg-color);
 }
 
 .logo-bar img {
@@ -146,13 +143,13 @@ body {
 /*skills section*/
 .skills-section {
     width: 90%;
-    max-width: 1280px;
+    max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
     align-items: center;
     gap: 42px;
-    background-color: #fff;
-    padding: 42px 24px;
+    background-color: var(--bg-color);
+    padding: var(--section-padding);
 
 }
 
@@ -175,12 +172,8 @@ body {
     flex: 1 0 0;
 }
 
-.skills-section .cards-section .skills-card .skills-card-icon {
-    width: 152px;
-    height: 133px;
-}
-
-.skills-section .cards-section .skills-card .skills-card-icon img {
+.skills-section .cards-section .skills-card .skills-card-icon,
+.skills-card-icon img {
     width: 152px;
     height: 133px;
 }
@@ -188,10 +181,6 @@ body {
 .skills-card-content {
     width: 310px;
     height: 135px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px; */
 }
 
 .skills-card-content .title {
@@ -205,7 +194,7 @@ body {
 
 .skills-card-content .template {
     font-size: 17px;
-    color: #2D2D2D;
+    color: var(--primary-color);
     line-height: 27px;
     text-align: center;
     font-style: normal;
@@ -219,8 +208,11 @@ body {
     width: 90%;
     max-width: 1280px;
     margin: 0 auto;
-    background-color: #fff;
-    padding: 42px 24px;
+    background-color: var(--bg-color);
+    padding: var(--section-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
 }
 
 .gallery-section .latest-work {
@@ -228,6 +220,7 @@ body {
     font-weight: 600;
     text-align: center;
     font-size: 32px;
+    line-height: 42px;
 }
 
 .gallery-section .cards-section {
@@ -256,26 +249,23 @@ body {
 }
 
 .gallery-section .cards-section .gallery-card .title-desciption .project-title {
-    color: #2D2D2D;
+    color: var(--primary-color);
     margin-bottom: 8px;
 }
-
-.gallery-section .cards-section .gallery-card .title-desciption .ui-art-drection {}
 
 /*testimonial*/
 .testimonial-section {
     width: 90%;
-    max-width: 1280px;
+    max-width: var(--max-width);
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var(--bg-color);
     display: flex;
-    padding: 42px 24px;
+    padding: var(--section-padding);
     flex-direction: column;
     gap: 42px;
 }
 
 .testimonial-section .testimonial {
-    font-family: Epilogue;
     font-style: normal;
     font-weight: 600;
     text-align: center;
@@ -290,8 +280,6 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start;
-    align-self: stretch;
-
 }
 
 .testimonial-section .testimonial-cards-section .testimonial-cards {
@@ -302,7 +290,7 @@ body {
     min-width: 320px;
     padding: 42px;
     flex: 1 0 0;
-    background-color: #F3F3F3;
+    background-color: var(--bg-light);
 
 }
 
@@ -313,17 +301,11 @@ body {
 
 .testimonial-cards .client-image-info {
     display: flex;
-    align-items: flex-start;
     gap: 16px;
 }
 
-.testimonial-cards .client-image-info .client-image {
-    margin-right: 16px;
-    width: 50px;
-    height: 50px;
-}
-
-.testimonial-cards .client-image-info .client-image img {
+.testimonial-cards .client-image-info .client-image,
+.client-image img {
     margin-right: 16px;
     width: 50px;
     height: 50px;
@@ -332,13 +314,11 @@ body {
 .testimonial-cards .client-image-info .info-stars {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 11px;
 }
 
 .info-stars .stars {
     display: flex;
-    align-items: flex-start;
     gap: 6px;
 }
 
@@ -350,26 +330,22 @@ body {
 .info-stars .name-company {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .info-stars .name-company .name {
     margin-bottom: 5px;
 }
 
-.info-stars .name-company .company {}
-
 /*contact section*/
 .contact-section {
     width: 90%;
-    max-width: 1280px;
+    max-width: var(--max-width);
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var(--bg-color);
     display: flex;
     padding: 42px 24px 86px 24px;
     flex-direction: column;
     gap: 24px;
-    align-items: flex-start;
 }
 
 .contact-section .contact-text {
@@ -382,8 +358,6 @@ body {
 
 .contact-section .contact-section-content {
     display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
     gap: 42px 142px;
     flex-wrap: wrap;
 }
@@ -396,11 +370,8 @@ body {
     min-width: 320px;
 }
 
-.contact-section-content .contact-info .title-des {}
-
 .contact-section-content .contact-info .social-links {
     display: flex;
-    align-items: flex-start;
     gap: 24px;
 }
 
@@ -432,13 +403,17 @@ body {
     padding: 16px 24px;
     min-width: 320px;
     max-width: 520px;
-    align-items: flex-start;
-    outline: none;
     border: none;
-    box-shadow: none;
-    background-color: #F3F3F3;
+    background-color: var(--bg-light);
+}
 
-
+.input-fields input::placeholder {
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: var(--font-family);
+    color: var(--primary-color);
 }
 
 .contact-form .btn-submit {
@@ -447,10 +422,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: #2D2D2D;
+    background-color: var(--primary-color);
 }
 
 .contact-form .btn-submit .btn-submit-text {
     text-align: center;
     color: #fff;
+    font-family: var(--font-family);
 }
