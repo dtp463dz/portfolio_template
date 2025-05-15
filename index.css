@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Epilogue", sans-serif;
+    width: 100%;
+}
+
+.textContent {
+    font-family: Epilogue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.textlitle {
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 24px 42px;
+    background-color: #fff;
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.navigation .logo {}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #2D2D2D;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+/*header-section*/
+.header-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #fff;
+    gap: 42px 68px;
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header-section .header-content {
+    display: flex;
+    min-width: 320px;
+    max-width: 620px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    flex: 1 0 0;
+}
+
+.header-section .header-content .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-right: 140px;
+}
+
+.title .title-content {}
+
+.title .visual {
+    font-size: 68px;
+    font-weight: 600;
+    color: #2D2D2D;
+    font-style: normal;
+
+}
+
+.title .subtitle {
+    width: 620px;
+}
+
+.title .btn-contact {
+    background-color: #2D2D2D;
+    padding: 24px 64px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    width: 211px;
+    height: 78px;
+}
+
+.header-section .header-image {
+    height: 360px;
+    max-width: 480px;
+    min-width: 320px;
+    flex: 1 0 0;
+}
+
+.header-section .header-image img {
+    height: 360px;
+    max-width: 480px;
+    min-width: 320px;
+}
+
+/*logo bar*/
+.logo-bar {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    row-gap: 68px;
+    justify-content: space-between;
+    padding: 42px 68px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.logo-bar img {
+    margin-left: 50px;
+}
+
+/*skills section*/
+.skills-section {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    background-color: #fff;
+    padding: 42px 24px;
+
+}
+
+.skills-section .cards-section {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.skills-section .cards-section .skills-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+    padding: 64px 42px;
+    gap: 42px;
+    flex: 1 0 0;
+}
+
+.skills-section .cards-section .skills-card .skills-card-icon {
+    width: 152px;
+    height: 133px;
+}
+
+.skills-section .cards-section .skills-card .skills-card-icon img {
+    width: 152px;
+    height: 133px;
+}
+
+.skills-card-content {
+    width: 310px;
+    height: 135px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px; */
+}
+
+.skills-card-content .title {
+    font-size: 27px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.skills-card-content .template {
+    font-size: 17px;
+    color: #2D2D2D;
+    line-height: 27px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    width: 310px;
+    height: 81px;
+}
+
+/*gallery section*/
+.gallery-section {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 42px 24px;
+}
+
+.gallery-section .latest-work {
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    font-size: 32px;
+}
+
+.gallery-section .cards-section {
+    width: 1250px;
+    height: 860px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-section .cards-section .gallery-card {
+    width: 395px;
+    height: 330px;
+}
+
+.gallery-section .cards-section .gallery-card .img-gallery-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+
+.gallery-section .cards-section .gallery-card .title-desciption {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-section .cards-section .gallery-card .title-desciption .project-title {
+    color: #2D2D2D;
+    margin-bottom: 8px;
+}
+
+.gallery-section .cards-section .gallery-card .title-desciption .ui-art-drection {}
+
+/*testimonial*/
+.testimonial-section {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    padding: 42px 24px;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.testimonial-section .testimonial {
+    font-family: Epilogue;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    font-size: 32px;
+    line-height: 42px;
+
+}
+
+.testimonial-section .testimonial-cards-section {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-self: stretch;
+
+}
+
+.testimonial-section .testimonial-cards-section .testimonial-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 68px;
+    min-width: 320px;
+    padding: 42px;
+    flex: 1 0 0;
+    background-color: #F3F3F3;
+
+}
+
+.testimonial-cards .template-text {
+    width: 100%;
+    height: 90px;
+}
+
+.testimonial-cards .client-image-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.testimonial-cards .client-image-info .client-image {
+    margin-right: 16px;
+    width: 50px;
+    height: 50px;
+}
+
+.testimonial-cards .client-image-info .client-image img {
+    margin-right: 16px;
+    width: 50px;
+    height: 50px;
+}
+
+.testimonial-cards .client-image-info .info-stars {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+}
+
+.info-stars .stars {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.info-stars .stars img {
+    width: 20px;
+    height: 20px;
+}
+
+.info-stars .name-company {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-stars .name-company .name {
+    margin-bottom: 5px;
+}
+
+.info-stars .name-company .company {}
+
+/*contact section*/
+.contact-section {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    padding: 42px 24px 86px 24px;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.contact-section .contact-text {
+    width: 626px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.contact-section .contact-section-content {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 42px 142px;
+    flex-wrap: wrap;
+}
+
+.contact-section-content .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    flex: 1 0 0;
+    min-width: 320px;
+}
+
+.contact-section-content .contact-info .title-des {}
+
+.contact-section-content .contact-info .social-links {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.contact-section-content .contact-info .social-links img {
+    width: 36px;
+    height: 36px;
+}
+
+.contact-section-content .contact-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 520px;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+}
+
+.contact-section-content .contact-form .input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.input-fields input {
+    display: flex;
+    gap: 10px;
+    padding: 16px 24px;
+    min-width: 320px;
+    max-width: 520px;
+    align-items: flex-start;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: #F3F3F3;
+
+
+}
+
+.contact-form .btn-submit {
+    padding: 24px 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #2D2D2D;
+}
+
+.contact-form .btn-submit .btn-submit-text {
+    text-align: center;
+    color: #fff;
+}
